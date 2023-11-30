@@ -1,4 +1,5 @@
 import "./App.css";
+import Countdown from "./challenges/COUNTDOWN/Countdown";
 import FAQComponent from "./challenges/FAQ/Faq";
 
 const FAQ = [
@@ -20,6 +21,7 @@ function App() {
     return (
         <>
             <FAQComponent questions={FAQ} />
+            <Countdown />
         </>
     );
 }
