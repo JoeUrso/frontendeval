@@ -1,7 +1,8 @@
 import "./App.css";
-import Countdown from "./challenges/COUNTDOWN/Countdown";
-import FAQComponent from "./challenges/FAQ/Faq";
-import map from "./challenges/array.map";
+import Countdown from "./challenges/Countdown/Countdown";
+import FAQComponent from "./challenges/Faq/Faq";
+import Mortgage from "./challenges/MortagageCalculator/mortgage";
+import map from "./challenges/map";
 
 const FAQ = [
     {
@@ -23,10 +24,11 @@ function App() {
     console.log(mappedArray);
 
     return (
-        <>
+        <div className="app">
             <FAQComponent questions={FAQ} />
             <Countdown />
-        </>
+            <Mortgage />
+        </div>
     );
 }
 
