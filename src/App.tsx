@@ -1,6 +1,7 @@
 import "./App.css";
 import Countdown from "./challenges/COUNTDOWN/Countdown";
 import FAQComponent from "./challenges/FAQ/Faq";
+import map from "./challenges/array.map";
 
 const FAQ = [
     {
@@ -18,6 +19,9 @@ const FAQ = [
 ];
 
 function App() {
+    const mappedArray = map([1, 2, 3, 4, 5], (x) => x * 2);
+    console.log(mappedArray);
+
     return (
         <>
             <FAQComponent questions={FAQ} />
