@@ -1,7 +1,8 @@
 import "./App.css";
 import Countdown from "./challenges/Countdown/Countdown";
 import FAQComponent from "./challenges/Faq/Faq";
-import Mortgage from "./challenges/MortagageCalculator/mortgage";
+import Modal from "./challenges/Modal/Modal";
+import Mortgage from "./challenges/MortagageCalculator/MortgageCalculator";
 import map from "./challenges/map";
 
 const FAQ = [
@@ -28,6 +29,7 @@ function App() {
             <FAQComponent questions={FAQ} />
             <Countdown />
             <Mortgage />
+            <Modal />
         </div>
     );
 }

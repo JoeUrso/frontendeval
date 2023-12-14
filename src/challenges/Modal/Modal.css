@@ -1,0 +1,36 @@
+.modal-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    width: 100%;
+}
+
+.modal-main-container-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 40rem;
+    width: 100%;
+}
+
+.show-offer-button {
+    width: 50%;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid black;
+    background-color: aliceblue;
+}
+
+.close-button {
+    align-self: flex-start;
+}
