@@ -1,6 +1,7 @@
 import "./App.css";
 import Countdown from "./challenges/Countdown/Countdown";
 import FAQComponent from "./challenges/Faq/Faq";
+import MemoryGame from "./challenges/MemoryGame/MemoryGame";
 import Modal from "./challenges/Modal/Modal";
 import Mortgage from "./challenges/MortagageCalculator/MortgageCalculator";
 import map from "./challenges/map";
@@ -30,6 +31,7 @@ function App() {
             <Countdown />
             <Mortgage />
             <Modal />
+            <MemoryGame />
         </div>
     );
 }

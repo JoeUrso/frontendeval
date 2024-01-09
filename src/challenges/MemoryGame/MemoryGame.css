@@ -1,0 +1,42 @@
+.memory-game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 2rem;
+}
+
+.selected-card {
+    background-color: rosybrown;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.non-selected-card {
+    background-color: aqua;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-button {
+    height: 5rem;
+    width: 20rem;
+    background-color: pink;
+}
