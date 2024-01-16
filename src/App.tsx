@@ -4,6 +4,7 @@ import FAQComponent from "./challenges/Faq/Faq";
 import MemoryGame from "./challenges/MemoryGame/MemoryGame";
 import Modal from "./challenges/Modal/Modal";
 import Mortgage from "./challenges/MortagageCalculator/MortgageCalculator";
+import UndoableCounter from "./challenges/UndoableCounter/UndoableCounter";
 import map from "./challenges/map";
 
 const FAQ = [
@@ -32,6 +33,7 @@ function App() {
             <Mortgage />
             <Modal />
             <MemoryGame />
+            <UndoableCounter />
         </div>
     );
 }
