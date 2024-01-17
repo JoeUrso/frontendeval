@@ -4,13 +4,13 @@ import { FaCheck } from "react-icons/fa";
 import { TiDelete } from "react-icons/ti";
 import "./ShoppingList.css";
 
-type item = { id: number; item: string; checked: boolean };
+type Item = { id: number; item: string; checked: boolean };
 
 const ShoppingList = () => {
     const [search, setSearch] = useState("");
     const [results, setResults] = useState<string[]>([]);
     const [delay, setDelay] = useState(true);
-    const [list, setList] = useState<item[]>([]);
+    const [list, setList] = useState<Item[]>([]);
 
     useEffect(() => {
         if (search.length < 2) {
@@ -19,16 +19,20 @@ const ShoppingList = () => {
         }
 
         if (search.length >= 2 && !delay) {
-            try {
-                console.log("fetched");
-
-                fetch(`https://api.frontendeval.com/fake/food/${search}`).then(
-                    (response) =>
-                        response.json().then((data) => setResults(data))
-                );
-            } catch (error) {
-                throw new Error("Couldn't find that");
-            }
+            fetch(`https://api.frontendeval.com/fake/food/${search}`)
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
+                .then((data) => setResults(data))
+                .catch((error) => {
+                    console.error(
+                        "There has been a problem with your fetch operation: ",
+                        error
+                    );
+                });
         }
 
         if (delay) {
@@ -59,20 +63,20 @@ const ShoppingList = () => {
         setList(newList);
     };
 
-    const check = (checkedItem: item) => {
+    const check = (checkedItem: Item) => {
         const newList = list.map((item) => {
             if (checkedItem.id === item.id) {
-                item.checked = true;
+                return { ...item, checked: true };
             }
             return item;
         });
         setList(newList);
     };
 
-    const uncheck = (uncheckedItem: item) => {
+    const uncheck = (uncheckedItem: Item) => {
         const newList = list.map((item) => {
             if (uncheckedItem.id === item.id) {
-                item.checked = false;
+                return { ...item, checked: false };
             }
             return item;
         });
