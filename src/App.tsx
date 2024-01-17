@@ -4,6 +4,7 @@ import FAQComponent from "./challenges/Faq/Faq";
 import MemoryGame from "./challenges/MemoryGame/MemoryGame";
 import Modal from "./challenges/Modal/Modal";
 import Mortgage from "./challenges/MortagageCalculator/MortgageCalculator";
+import ShoppingList from "./challenges/ShoppingList/ShoppingList";
 import UndoableCounter from "./challenges/UndoableCounter/UndoableCounter";
 import map from "./challenges/map";
 
@@ -34,6 +35,7 @@ function App() {
             <Modal />
             <MemoryGame />
             <UndoableCounter />
+            <ShoppingList />
         </div>
     );
 }
