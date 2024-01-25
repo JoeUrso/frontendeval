@@ -1,5 +1,6 @@
 import "./App.css";
 import Countdown from "./challenges/Countdown/Countdown";
+import Debounce from "./challenges/Debounce/debounce";
 import FAQComponent from "./challenges/Faq/Faq";
 import MemoryGame from "./challenges/MemoryGame/MemoryGame";
 import Modal from "./challenges/Modal/Modal";
@@ -36,6 +37,7 @@ function App() {
             <MemoryGame />
             <UndoableCounter />
             <ShoppingList />
+            <Debounce />
         </div>
     );
 }
