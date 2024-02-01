@@ -37,7 +37,6 @@ const RollingDice = () => {
         }
 
         setDieArray(arr);
-        setNumberOfDie(0);
     };
 
     return (

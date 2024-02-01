@@ -1,4 +1,5 @@
 import "./App.css";
+import AnalogClock from "./challenges/AnalogClock/AnalogClock";
 import Countdown from "./challenges/Countdown/Countdown";
 import Debounce from "./challenges/Debounce/Debounce";
 import FAQComponent from "./challenges/Faq/Faq";
@@ -40,6 +41,7 @@ function App() {
             <ShoppingList />
             <Debounce />
             <RollingDice />
+            <AnalogClock />
         </div>
     );
 }
