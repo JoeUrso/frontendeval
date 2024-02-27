@@ -1,0 +1,19 @@
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 15rem;
+}
+
+label {
+    margin-top: 2rem;
+}
+
+input {
+    margin-bottom: 2rem;
+}

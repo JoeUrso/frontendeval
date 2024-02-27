@@ -6,6 +6,7 @@ import FAQComponent from "./challenges/Faq/Faq";
 import MemoryGame from "./challenges/MemoryGame/MemoryGame";
 import Modal from "./challenges/Modal/Modal";
 import Mortgage from "./challenges/MortagageCalculator/MortgageCalculator";
+import MultiStepForm from "./challenges/MultiStepForm/MultiStepForm";
 import RollingDice from "./challenges/RollingDice/RollingDice";
 import ShoppingList from "./challenges/ShoppingList/ShoppingList";
 import UndoableCounter from "./challenges/UndoableCounter/UndoableCounter";
@@ -42,6 +43,7 @@ function App() {
             <Debounce />
             <RollingDice />
             <AnalogClock />
+            <MultiStepForm />
         </div>
     );
 }
